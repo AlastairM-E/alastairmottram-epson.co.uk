@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@types/node": "^17.0.18",
     "autoprefixer": "^10.4.2",
     "netlify-cli": "^9.6.5",
     "postcss": "^8.4.6",
@@ -17,7 +18,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^1.0.0",
-    "@types/node": "^17.0.18",
-    "dotenv": "^16.0.0"
+    "@sendgrid/mail": "^7.6.1",
+    "axios": "^0.26.0"
   }
 }
