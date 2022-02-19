@@ -18,7 +18,7 @@
       }
     </style>
 </head>
-<body>
+<body id="body">
     <nav class="flex p-2 items-center border-black border-b-2">
         <img src="src/images/Avatar.jpg" alt="Alastair Mottram-Epson's face" class="mr-2 h-16 rounded-full" width="64px" height="64px">
         <h1 class="text-2xl">Alastair M-E</h1>
@@ -69,27 +69,28 @@
         </div>
         <div class="m-4 text-xl text-center">
           <h1 class="text-3xl p-2 mb-2 border-black border-2">Contact</h1>
-            <form action="/" class="border-black border-2 p-2 h-96">
+            <form id="contactForm" class="border-black border-2 p-2 h-96">
               <div class="text-left">
                 <label for="name">
                   <h2 class="ml-2">Name <strong class="text-red-600">*</strong></h2>
-                  <input type="text" required name="name" id="name" class="border-black border-2 p-2 m-2 inputField focus:outline-none focus:border-blue-600 text-base" />
+                  <input type="text" required name="name" id="name" class="border-black border-2 p-2 m-1 inputField focus:outline-none focus:border-blue-600 text-base" />
                 </label>
                 <br>
                 <label for="email">
                   <h2 class="ml-2">Email <strong class="text-red-600">*</strong></h2>
-                  <input type="text" required name="email" id="email" class="border-black border-2  p-2 m-2 inputField focus:outline-none focus:border-blue-600 text-base" />
+                  <input type="text" required name="email" id="email" class="border-black border-2  p-2 m-1 inputField focus:outline-none focus:border-blue-600 text-base" />
                 </label>
                 <br>
                 <label for="message">
                   <h2 class="ml-2">Message <strong class="text-red-600">*</strong></h2>
-                  <textarea required name="message" id="message" class="border-black border-2 m-2  p-2 inputField h-15 focus:outline-none focus:border-blue-600 resize-none text-base"></textarea>
+                  <textarea required name="message" id="message" class="border-black border-2 m-1 p-2 inputField h-24 focus:outline-none focus:border-blue-600 resize-none text-base"></textarea>
                 </label>
               </div>
               <button type="submit" class="bg-green-500 p-2 m-2 ml-2 border-black border-2 hover:bg-lime-400 active:bg-yellow-300 active:text-black">Submit</button>
             </form> 
         </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" defer src="/src/main.ts"></script>
+    <script id="googleRecaptchaScript"></script>
 </body>
 </html>
