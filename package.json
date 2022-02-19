@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite && netlify dev",
     "build": "tsc && vite build",
+    "vite": "vite",
     "preview": "vite preview"
   },
   "devDependencies": {
