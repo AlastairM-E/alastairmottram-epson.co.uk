@@ -2,6 +2,7 @@ type FormField = HTMLInputElement | null;
 
 const googleRecaptchaScript = document.getElementById('googleRecaptchaScript');
 const contactForm = document.getElementById('contactForm');
+
 googleRecaptchaScript?.setAttribute('defer', 'true');
 googleRecaptchaScript?.setAttribute(
     'src', 
@@ -9,12 +10,26 @@ googleRecaptchaScript?.setAttribute(
 );
 
 contactForm?.addEventListener('submit', ($event) => {
+  const submitButtonText = document.getElementById('submitButtonText');
+  const loadingSpinner = document.getElementById('loadingSpinner');
+  submitButtonText?.classList.add('opacity-0')
+  loadingSpinner?.classList.remove('hidden');
+
     $event.preventDefault();
     grecaptcha.ready(async () => {
         const nameField = document.getElementById('name') as FormField;
         const emailField = document.getElementById('email') as FormField;
         const messageTextarea = document.getElementById('message') as FormField;
+        const submitContactButton = document.getElementById('submitContactButton');
+        const contactSuccessMessage = document.getElementById('contactSuccessMessage');
+        const contactErrorMessage = document.getElementById('contactErrorMessage');
         const token = await grecaptcha.execute(import.meta.env.VITE_RECAPTCHA_SITE_KEY, { action: 'submit' });
+
+        nameField?.setAttribute('disabled', 'true');
+        emailField?.setAttribute('disabled', 'true');
+        messageTextarea?.setAttribute('disabled', 'true');
+        submitContactButton?.setAttribute('disabled', 'true');
+
         const contactFormApiResponse = await fetch('/.netlify/functions/contactForm', {
             method: 'POST',
             headers: {
@@ -28,56 +43,13 @@ contactForm?.addEventListener('submit', ($event) => {
             }),
         });
 
-        console.log({ json: await contactFormApiResponse.json() })
+        const { isEmailSent } = await contactFormApiResponse.json();
+        contactForm.classList.add('hidden');
+
+        if (isEmailSent) {
+          contactSuccessMessage?.classList.remove('hidden');
+        } else {
+          contactErrorMessage?.classList.remove('hidden');
+        }
     });
 });
-
-// <Flex textAlign="left" padding={8} alignItems="center" flexWrap="wrap" height="80%">
-// <Center width="100%">
-//   <Alert status="error" variant="top-accent">
-//     <AlertIcon />
-//     <AlertTitle>We are unable to send your message.</AlertTitle>
-//   </Alert>
-// </Center>
-// <Divider marginTop={2} marginBottom={2} borderColor="black" />
-// <Text>Please reload the page to try again.</Text>
-// <Divider marginTop={2} marginBottom={2} borderColor="black" />
-// <Text>
-//   If you continue to see this error, contact me by the email address below:
-// </Text>
-// <UnorderedList>
-//   <ListItem>
-//     <Link color="blue" href="mailto:alastair.mottram-epson@outlook.com">alastair.mottram-epson@outlook.com</Link>
-//   </ListItem>
-// </UnorderedList>
-// <br />
-// <Text>I will get back to you as soon as possible.</Text>
-// </Flex>
-
-// <Flex textAlign="left" padding={8} alignItems="center" flexWrap="wrap" height="80%">
-// <Center width="100%">
-//   <Alert status="success" variant="top-accent">
-//     <AlertIcon />
-//     <AlertTitle>You have sent your message!</AlertTitle>
-//   </Alert>
-// </Center>
-// <Divider marginTop={2} marginBottom={2} borderColor="black" />
-// <Text textAlign="left">
-//   Please wait for
-//   <strong>
-//     {' '}
-//     3-4
-//     {' '}
-//   </strong>
-//   working days for a reply.
-// </Text>
-// <br />
-// <Text>If you have not received an email back, please email:</Text>
-// <UnorderedList>
-//   <ListItem>
-//     <Link color="blue" href="mailto:alastair.mottram-epson@outlook.com">alastair.mottram-epson@outlook.com</Link>
-//   </ListItem>
-// </UnorderedList>
-// <Divider marginTop={2} marginBottom={2} borderColor="black" />
-// <Text>I will get back to you as soon as possible.</Text>
-// </Flex>

@@ -8,6 +8,8 @@
   }
 
   .spinner {
+    left: 37%;
+    top: 22%;
     animation: spin 2s linear infinite;
   }
 
