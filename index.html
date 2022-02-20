@@ -7,16 +7,8 @@
     <meta name="description" content="Alastair Mottram-Epson's Portfolio website">
     <link rel="shortcut icon" type="image/jpeg" href="/src/images/Avatar.jpg">
     <title>alastairm-e.co.uk</title>
-    <style>
-      .columnHeight {
-        height:450px;
-        overflow: hidden;
-      }
-
-      .inputField {
-        width:95%;
-      }
-    </style>
+    <link rel="stylesheet" href="./src/tailwind.css" />
+    <link rel="stylesheet" href="/src/style.css" />
 </head>
 <body id="body">
     <nav class="flex p-2 items-center border-black border-b-2">
@@ -53,7 +45,7 @@
         </div>
         <div class="m-4 text-center text-lg columnHeight">
           <h1 class="text-3xl p-2 mb-2 border-black border-2">About</h1>
-              <div class=" border-black border-2 p-4 h-96">
+              <div class=" border-black border-2 p-4 pt-2 h-96">
                 <img src="././src/images/Avatar.jpg" alt="Alastair M-E's face" class="ml-auto mr-auto w-32 h-32 p-2" height="128px" width="128px" />
                 <hr class="border-black border-t-2 my-2">
                 <h2>Hi, I am Alastair Mottram-Epson.</h2>
@@ -69,7 +61,7 @@
         </div>
         <div class="m-4 text-xl text-center">
           <h1 class="text-3xl p-2 mb-2 border-black border-2">Contact</h1>
-            <form id="contactForm" class="border-black border-2 p-2 h-96">
+            <form id="contactForm" class="border-black border-2 p-2 h-96 hidden">
               <div class="text-left">
                 <label for="name">
                   <h2 class="ml-2">Name <strong class="text-red-600">*</strong></h2>
@@ -86,8 +78,49 @@
                   <textarea required name="message" id="message" class="border-black border-2 m-1 p-2 inputField h-24 focus:outline-none focus:border-blue-600 resize-none text-base"></textarea>
                 </label>
               </div>
-              <button type="submit" class="bg-green-500 p-2 m-2 ml-2 border-black border-2 hover:bg-lime-400 active:bg-yellow-300 active:text-black">Submit</button>
-            </form> 
+              <button type="submit" class="bg-green-500 p-2 m-2 ml-2 border-black border-2 hover:bg-lime-400 active:bg-yellow-300 active:text-black">
+                <!-- <svg class="spinner" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="24" cy="24" r="20" stroke="black" stroke-width="8"/>
+                  <circle cx="24" cy="4" r="3" width="2" height="2" fill="white" stroke="none"/>
+                </svg>
+                <span class="opacity-0">Submit</span> -->
+                
+              </button>
+            </form>
+            <div id='contactErrorMessage' class="border-black border-2 p-2 h-96 text-lg text-left hidden">
+              <div class="p-4 pt-2">
+              <h2 class="p-2 bg-green-300 border-green-800 border-l-4 flex items-center justify-center">
+                <span>You have sent your message!</span>
+                <img class="inline-block ml-2" src="./src/images/tick-icon.svg" alt="tick-icon" height="24px" width="24px">
+                </h2>
+                <br>
+                  <div>Please wait for <strong>3-4</strong> working days for a reply.</div>
+                  <br>
+                  <div>If you have not received a reply, email:</div>
+                  <ul class="list-disc">
+                    <li class="text-base ml-6"><a class="text-blue-700" href="mailto:alastair.mottram-epson@outlook.com">alastair.mottram-epson@outlook.com</a></li>
+                  </ul>
+                  <br>
+                  <div>I will get back to you as soon as possible.</div>
+                </div>
+              </div>
+              <div id="contactErrorMessage" class="border-black border-2 p-2 h-96 text-lg text-left hidden">
+                <div class="p-4 pt-2">
+                <h2 class="p-2 bg-red-300 border-red-800 border-l-4 flex items-center justify-center">
+                  <span>We cannot send your message.</span>
+                  <img class="inline-block ml-2" src="./src/images/cross-icon.svg" alt="tick-icon" height="24px" width="24px">
+                </h2>
+                <br>
+                <div>Please reload the page to try again.</div>
+                <br>
+                <div>If you continue to see this error, email:</div>
+                  <ul class="list-disc">
+                    <li class="text-base ml-6"><a class="text-blue-700" href="mailto:alastair.mottram-epson@outlook.com">alastair.mottram-epson@outlook.com</a></li>
+                  </ul>
+                  <br>
+                  <div>I will get back to you as soon as possible.</div>
+                </div>
+              </div>
         </div>
     </div>
     <script type="module" defer src="/src/main.ts"></script>
