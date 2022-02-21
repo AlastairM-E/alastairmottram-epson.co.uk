@@ -16,6 +16,7 @@
   <body id="body">
     <nav class="flex p-2 items-center border-black border-b-2">
       <img
+        loading="lazy"
         src="src/images/Avatar.jpg"
         alt="Alastair Mottram-Epson's face"
         class="mr-2 h-16 rounded-full"
@@ -70,12 +71,12 @@
                 </td>
               </tr>
               <tr class="border-black border-2 border-x-0">
-                <td class="p-2 border-black border-r-2">OpenUI5</td>
+                <td class="p-2 border-black border-r-2">Node.js</td>
                 <td class="p-2">
                   <img
                     class="ml-auto"
-                    src="./src/images/ui5_icon.svg"
-                    alt="OpenUI5 icon"
+                    src="./src/images/icons8-nodejs.svg"
+                    alt="Node.js icon"
                     width="48px"
                     height="48px"
                   />
@@ -95,6 +96,7 @@
         <h1 class="text-3xl p-2 mb-2 border-black border-2">About</h1>
         <div class="border-black border-2 p-4 pt-2 h-96">
           <img
+            loading="lazy"
             src="././src/images/Avatar.jpg"
             alt="Alastair M-E's face"
             class="ml-auto mr-auto w-32 h-32 p-2"
@@ -235,7 +237,7 @@
             <ul class="list-disc">
               <li class="text-base ml-6">
                 <a
-                  class="text-blue-700"
+                  class="text-blue-700 hover:text-blue-500 active:text-purple-600"
                   href="mailto:alastair.mottram-epson@outlook.com"
                   >alastair.mottram-epson@outlook.com</a
                 >
@@ -247,8 +249,39 @@
         </div>
       </div>
     </div>
-    <footer class="flex p-2 items-center border-black border-t-2"></footer>
+    <footer class="flex p-2 items-center border-black border-t-2 justify-center">
+      <section class="m-2 p-2">
+        <strong>Site Info</strong>
+        <ul class="list-disc">
+          <li>
+            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600" href="https://icons8.com/">This site used icons from https://icons8.com/.</a>
+          </li>
+          <li>
+            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600" href="https://tailwindcss.com/">Made with Tailwindcss.</a>
+          </li>
+          <li>
+            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600" href="https://vitejs.dev/">Build tool - used Vite.</a>
+          </li>
+        </ul>
+      </section>
+      <section class="m-2 p-2">
+        <strong>Social Links</strong>
+        <ul class="list-disc">
+          <li>
+            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600" href="mailto:alastair.mottram-epson@outlook.com">Email: alastair.mottram-epson@outlook.com.</a>
+          </li>
+          <li>
+            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600" href="https://www.linkedin.com/in/alastair-m-e/">LinkedIn</a>
+          </li>
+          <li>
+            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600" href="https://github.com/AlastairM-E?tab=repositories">GitHub</a>
+          </li>
+        </ul>
+      </section>
+      
+    </footer>
     <script type="module" defer src="/src/main.ts"></script>
-    <script id="googleRecaptchaScript"></script>
+    <script id="googleRecaptchaScript">
+    </script>
   </body>
 </html>
