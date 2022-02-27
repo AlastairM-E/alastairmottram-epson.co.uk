@@ -21,3 +21,8 @@
       transform: rotate(360deg);
     }
   }
+
+.outlineSolid {
+  outline-style:solid;
+  outline-color: white;
+}
