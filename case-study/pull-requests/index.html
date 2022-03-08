@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Alastair Mottram-Epson's Portfolio website"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/jpeg"
+      href="../../../src/images/Avatar.jpg"
+    />
+    <title>alastairm-e.co.uk - Pull request case study</title>
+    <link rel="stylesheet" href="../../../src/tailwind.css" />
+    <link rel="stylesheet" href="../../../src/style.css" />
+  </head>
+  <body id="body">
+    <nav class="flex p-2 items-center border-black border-b-2">
+      <img
+        loading="lazy"
+        src="../../../src/images/Avatar.jpg"
+        alt="Alastair Mottram-Epson's face"
+        class="mr-2 h-16 rounded-full"
+        width="64px"
+        height="64px"
+      />
+      <h1 class="text-2xl">Alastair M-E</h1>
+      <span class="ml-auto">
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="/"
+          >Home</a
+        >
+
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="/case-study/pull-requests/"
+          >Case Studies</a
+        >
+      </span>
+    </nav>
+    <div class="grid grid-cols-1">
+      <nav
+        id="stickyNav"
+        class="flex justify-center p-2 border-black border-b-2"
+      >
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="#case-study"
+          >Case Study</a
+        >
+
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="#context"
+          >Context</a
+        >
+
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="#what-I-did"
+          >What I did</a
+        >
+
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="#results"
+          >Results</a
+        >
+
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="#next-steps"
+          >Next Steps</a
+        >
+      </nav>
+      <div class="m-4 grid lg:grid-cols-3 md:grid-cols-1">
+        <div class="p-2 m-2"></div>
+        <div class="p-2 m-2 border-black ml-auto mr-auto">
+          <h1 id="case-study" class="text-3xl">Case Study</h1>
+          <h2 class="text-1xl">Pull requests</h2>
+          <hr class="border-black border-t-2 my-2" />
+          <video src="../../video/test_video.mkv" controls></video>
+          <p>One minute video</p>
+          <hr class="border-black border-t-2 my-2" />
+          <p>Provides more detail than the words with pictures</p>
+          <h1 id="context" class="text-3xl">Context</h1>
+          <hr class="border-black border-t-2 my-2" />
+          <ul class="list-disc m-2 p-2 text-base">
+            <li>My Dev team had no code review process.</li>
+            <li>Our code quality & knowledge on the codebase was lacking.</li>
+            <li>We were only using Azure Dev Ops for git repos.</li>
+          </ul>
+          <h1 id="what-I-did" class="text-3xl">What I did</h1>
+          <hr class="border-black border-t-2 my-2" />
+          <ul class="list-disc m-2 p-2 text-base">
+            <li>I researched pull requests and code reviews.</li>
+            <li>Presented the idea to my teams.</li>
+            <li>
+              Implement mandatory pull requests whenever a change to the
+              codebase & measured results.
+            </li>
+          </ul>
+          <h1 id="results" class="text-3xl">Results</h1>
+          <hr class="border-black border-t-2 my-2" />
+          <ul class="list-disc m-2 p-2 text-base">
+            <li>
+              <strong>3 code quality issues</strong> found per pull request.
+              <strong class="text-red-600">*</strong>
+            </li>
+            <li style="font-size: small">
+              <strong class="text-red-600 text-base">*</strong> - On average |
+              Code quality issue is an issue on readibility, or maintainability,
+              e.g. comments or variable names.
+            </li>
+          </ul>
+          <h1 id="next-steps" class="text-3xl">Next Steps</h1>
+          <hr class="border-black border-t-2 my-2" />
+        </div>
+        <div class="p-2 m-2"></div>
+      </div>
+    </div>
+    <footer
+      class="flex p-2 items-center border-black border-t-2 justify-center"
+    >
+      <section class="m-2 p-2">
+        <strong>Site Info</strong>
+        <ul class="list-disc">
+          <li class="m-2">
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://icons8.com/"
+              >This site used icons from https://icons8.com/.</a
+            >
+          </li>
+          <li class="m-2">
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://tailwindcss.com/"
+              >Made with Tailwindcss.</a
+            >
+          </li>
+          <li class="m-2">
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://vitejs.dev/"
+              >Build tool - used Vite.</a
+            >
+          </li>
+        </ul>
+      </section>
+      <section class="m-2 p-2">
+        <strong>Social Links</strong>
+        <ul class="list-disc">
+          <li class="m-2">
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="mailto:alastair.mottram-epson@outlook.com"
+              >Email: alastair.mottram-epson@outlook.com.</a
+            >
+          </li>
+          <li class="m-2">
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://www.linkedin.com/in/alastair-m-e/"
+              >LinkedIn</a
+            >
+          </li>
+          <li class="m-2">
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://github.com/AlastairM-E?tab=repositories"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script type="module" defer src="../../src/stickyNav.ts"></script>
+  </body>
+</html>

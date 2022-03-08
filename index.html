@@ -10,7 +10,7 @@
     />
     <link rel="shortcut icon" type="image/jpeg" href="/src/images/Avatar.jpg" />
     <title>alastairm-e.co.uk</title>
-    <link rel="stylesheet" href="./src/tailwind.css" />
+    <link rel="stylesheet" href="src/tailwind.css" />
     <link rel="stylesheet" href="/src/style.css" />
   </head>
   <body id="body">
@@ -24,6 +24,19 @@
         height="64px"
       />
       <h1 class="text-2xl">Alastair M-E</h1>
+      <span class="ml-auto">
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="/"
+          >Home</a
+        >
+
+        <a
+          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+          href="/case-study/pull-requests/"
+          >Case Studies</a
+        >
+      </span>
     </nav>
     <div class="grid lg:grid-cols-3 md:grid-cols-1">
       <div class="m-4 text-center text-xl columnHeight">
@@ -39,7 +52,7 @@
                 <td class="p-2">
                   <img
                     class="ml-auto"
-                    src="./src/images/icons8-javascript.svg"
+                    src="src/images/icons8-javascript.svg"
                     alt="JavaScript icon"
                     width="48px"
                     height="48px"
@@ -51,7 +64,7 @@
                 <td class="p-2">
                   <img
                     class="ml-auto"
-                    src="./src/images/react-icon.svg"
+                    src="src/images/react-icon.svg"
                     alt="React icon"
                     width="48px"
                     height="48px"
@@ -63,7 +76,7 @@
                 <td class="p-2">
                   <img
                     class="ml-auto"
-                    src="./src/images/icons8-typescript.svg"
+                    src="src/images/icons8-typescript.svg"
                     alt="TypeScript icon"
                     width="48px"
                     height="48px"
@@ -75,7 +88,7 @@
                 <td class="p-2">
                   <img
                     class="ml-auto"
-                    src="./src/images/icons8-nodejs.svg"
+                    src="src/images/icons8-nodejs.svg"
                     alt="Node.js icon"
                     width="48px"
                     height="48px"
@@ -97,7 +110,7 @@
         <div class="border-black border-2 p-4 pt-2 h-96">
           <img
             loading="lazy"
-            src="././src/images/Avatar.jpg"
+            src="src/images/Avatar.jpg"
             alt="Alastair M-E's face"
             class="ml-auto mr-auto w-32 h-32 p-2"
             height="128px"
@@ -161,7 +174,7 @@
                 required
                 name="message"
                 id="message"
-                class="border-black border-2 p-2 m-1 inputField h-24 focus:outline-none focus:border-blue-600 resize-none text-base" 
+                class="border-black border-2 p-2 m-1 inputField h-24 focus:outline-none focus:border-blue-600 resize-none text-base"
               ></textarea>
             </label>
           </div>
@@ -170,11 +183,27 @@
             id="submitContactButton"
             class="bg-green-500 p-2 m-2 border-black border-2 hover:bg-lime-400 active:bg-yellow-300 active:text-black relative focus:outline-none focus:border-blue-600 focus:bg-lime-400"
           >
-            <svg id="loadingSpinner" class="spinner absolute z-10 hidden" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">     
-                  <circle cx="24" cy="24" r="20" stroke="black" stroke-width="8"/>
-                  <circle cx="24" cy="4" r="3" width="2" height="2" fill="white" stroke="none"/>
-                </svg>
-              <span id="submitButtonText">Submit</span>
+            <svg
+              id="loadingSpinner"
+              class="spinner absolute z-10 hidden"
+              width="24"
+              height="24"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="24" cy="24" r="20" stroke="black" stroke-width="8" />
+              <circle
+                cx="24"
+                cy="4"
+                r="3"
+                width="2"
+                height="2"
+                fill="white"
+                stroke="none"
+              />
+            </svg>
+            <span id="submitButtonText">Submit</span>
           </button>
         </form>
         <div
@@ -188,7 +217,7 @@
               <span>You have sent your message!</span>
               <img
                 class="inline-block ml-2"
-                src="./src/images/tick-icon.svg"
+                src="src/images/tick-icon.svg"
                 alt="tick-icon"
                 height="24px"
                 width="24px"
@@ -224,7 +253,7 @@
               <span>We cannot send your message.</span>
               <img
                 class="inline-block ml-2"
-                src="./src/images/cross-icon.svg"
+                src="src/images/cross-icon.svg"
                 alt="tick-icon"
                 height="24px"
                 width="24px"
@@ -249,18 +278,32 @@
         </div>
       </div>
     </div>
-    <footer class="flex p-2 items-center border-black border-t-2 justify-center">
+    <footer
+      class="flex p-2 items-center border-black border-t-2 justify-center"
+    >
       <section class="m-2 p-2">
         <strong>Site Info</strong>
         <ul class="list-disc">
           <li class="m-2">
-            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600" href="https://icons8.com/">This site used icons from https://icons8.com/.</a>
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://icons8.com/"
+              >This site used icons from https://icons8.com/.</a
+            >
           </li>
           <li class="m-2">
-            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600" href="https://tailwindcss.com/">Made with Tailwindcss.</a>
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://tailwindcss.com/"
+              >Made with Tailwindcss.</a
+            >
           </li>
           <li class="m-2">
-            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600" href="https://vitejs.dev/">Build tool - used Vite.</a>
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://vitejs.dev/"
+              >Build tool - used Vite.</a
+            >
           </li>
         </ul>
       </section>
@@ -268,20 +311,30 @@
         <strong>Social Links</strong>
         <ul class="list-disc">
           <li class="m-2">
-            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600" href="mailto:alastair.mottram-epson@outlook.com">Email: alastair.mottram-epson@outlook.com.</a>
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="mailto:alastair.mottram-epson@outlook.com"
+              >Email: alastair.mottram-epson@outlook.com.</a
+            >
           </li>
           <li class="m-2">
-            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600" href="https://www.linkedin.com/in/alastair-m-e/">LinkedIn</a>
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://www.linkedin.com/in/alastair-m-e/"
+              >LinkedIn</a
+            >
           </li>
           <li class="m-2">
-            <a class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600" href="https://github.com/AlastairM-E?tab=repositories">GitHub</a>
+            <a
+              class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
+              href="https://github.com/AlastairM-E?tab=repositories"
+              >GitHub</a
+            >
           </li>
         </ul>
       </section>
-      
     </footer>
     <script type="module" defer src="/src/main.ts"></script>
-    <script id="googleRecaptchaScript">
-    </script>
+    <script id="googleRecaptchaScript"></script>
   </body>
 </html>
