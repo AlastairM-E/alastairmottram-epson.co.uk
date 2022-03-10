@@ -34,3 +34,10 @@
   width:100%;
   background:white;
 }
+
+@media screen and (max-width: 768px)  {
+  .oneColumnFooter {
+    display: grid;
+    grid-column: 1;
+  }
+}
