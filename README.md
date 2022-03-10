@@ -6,7 +6,7 @@
 
 ## Results
 
-- 0.5 seconds faster by migrating to HTML, Tailwindcss & vanilla Typescript site by site from 541KB to 23KB.
+- 0.5 seconds faster by migrating to HTML, Tailwindcss & vanilla Typescript site by site from 541KB to 351KB.
 
 Check out [current site results](https://www.webpagetest.org/result/220310_AiDcRG_C2X/) and [old site results](https://www.webpagetest.org/result/220227_AiDcVW_7J4/).
 
