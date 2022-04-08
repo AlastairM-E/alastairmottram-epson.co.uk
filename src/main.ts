@@ -1,3 +1,5 @@
+import './assets/AlastairM-E--2022.03.27--CV.pdf';
+
 type FormField = HTMLInputElement | null;
 
 const googleRecaptchaScript = document.getElementById('googleRecaptchaScript');
