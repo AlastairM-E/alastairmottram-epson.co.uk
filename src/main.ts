@@ -30,7 +30,8 @@ contactForm?.addEventListener('submit', ($event) => {
         messageTextarea?.setAttribute('disabled', 'true');
         submitContactButton?.setAttribute('disabled', 'true');
 
-        const contactFormApiResponse = await fetch('/.netlify/functions/contactForm', {
+        try {
+          const contactFormApiResponse = await fetch('/.netlify/functions/contactForm', {
             method: 'POST',
             headers: {
               'content-type': 'application/json',
@@ -51,5 +52,11 @@ contactForm?.addEventListener('submit', ($event) => {
         } else {
           contactErrorMessage?.classList.remove('hidden');
         }
+        } catch($error) {
+          contactForm.classList.add('hidden');
+          contactErrorMessage?.classList.remove('hidden');
+          throw Error($error);
+        }
+
     });
 });
