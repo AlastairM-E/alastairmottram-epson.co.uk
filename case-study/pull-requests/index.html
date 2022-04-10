@@ -46,250 +46,207 @@
         >
       </span>
     </nav>
-    <div class="grid grid-cols-1">
-      <nav
-        id="stickyNav"
-        class="flex justify-center p-2 border-black border-b-2"
-      >
-        <a
-          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
-          href="#case-study"
-          >Case Study</a
-        >
-
-        <a
-          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
-          href="#context"
-          >Context</a
-        >
-
-        <a
-          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
-          href="#what-I-did"
-          >What I did</a
-        >
-
-        <a
-          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
-          href="#results"
-          >Results</a
-        >
-
-        <a
-          class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 p-2 border-white border-opacity-0 focus:border-blue-600"
-          href="#next-steps"
-          >Next Steps</a
-        >
-      </nav>
-      <div class="m-4 grid lg:grid-cols-3 md:grid-cols-1">
-        <div class="p-2 m-2"></div>
-        <div class="p-2 m-2 border-black ml-auto mr-auto">
-          <h1 id="case-study" class="text-3xl">Case Study</h1>
-          <h2 class="text-1xl">Pull requests</h2>
-          <hr class="border-black border-t-2 my-2" />
-          <video
-            src="../../video/AME--2022.03.10--Pull_request_presentation.mp4"
-            controls
-            preload="none"
-            poster="../../video/AME--2022.03.10--Pull_request_presentation_poster.jpg"
-          ></video>
-          <p>Two minute video</p>
-          <hr class="border-black border-t-2 my-2" />
-          <p>Provides more detail than the words with pictures</p>
-          <h1 id="context" class="text-3xl">Context</h1>
-          <hr class="border-black border-t-2 my-2" />
-          <ul class="list-disc m-2 p-2 text-base">
-            <li>My Dev team had no code review process.</li>
-            <li>Our code quality & knowledge on the codebase was lacking.</li>
-            <li>We were only using Azure Dev Ops for git repos.</li>
-          </ul>
-          <h1 id="what-I-did" class="text-3xl">What I did</h1>
-          <hr class="border-black border-t-2 my-2" />
-          <ul class="list-disc m-2 p-2 text-base">
-            <li>I researched pull requests and code reviews.</li>
-            <li>Presented the idea to my team.</li>
-            <li>
-              Implement mandatory pull requests whenever a change to the
-              codebase & measured results.
-            </li>
-          </ul>
-          <h1 id="results" class="text-3xl">Results</h1>
-          <hr class="border-black border-t-2 my-2" />
-          <ul class="list-disc m-2 p-2 text-base">
-            <li>
-              <strong>3 code quality issues</strong> found per pull request.
-              <strong class="text-red-600">*</strong>
-            </li>
-            <li style="font-size: small">
-              <strong class="text-red-600 text-base">*</strong> - On average |
-              Code quality issue is an issue on readibility, or maintainability,
-              e.g. comments or variable names.
-            </li>
-          </ul>
-          <h1 id="next-steps" class="text-3xl">Next Steps</h1>
-          <hr class="border-black border-t-2 my-2" />
-          <ul class="list-disc m-2 p-2 text-base">
-            <li>Add linter to catch more minor issues before a code review.</li>
-            <li>Add pull request template to focus the code review.</li>
-            <li>
-              Automate deploy via Azure Dev Ops Pipelines when pull request is
-              accepted.
-            </li>
-          </ul>
-        </div>
-        <div class="p-2 m-2"></div>
+    <div class="m-4 grid lg:grid-cols-4 sm:grid-cols-1">
+      <div class="p-2 m-2 col-start-2 col-span-2 border-black">
+        <h1 id="case-study" class="text-3xl">Case Study</h1>
+        <h2 class="text-1xl">Pull requests</h2>
+        <hr class="border-black border-t-2 my-2" />
+        <video
+          src="../../video/AME--2022.03.10--Pull_request_presentation.mp4"
+          controls
+          preload="none"
+          poster="../../video/AME--2022.03.10--Pull_request_presentation_poster.jpg"
+        ></video>
+        <p>Two minute video</p>
+        <hr class="border-black border-t-2 my-2" />
+        <p>Provides more detail than the words with pictures</p>
+        <h1 id="context" class="text-3xl">Context</h1>
+        <hr class="border-black border-t-2 my-2" />
+        <ul class="list-disc m-2 p-2 text-base">
+          <li>My Dev team had no code review process.</li>
+          <li>Our code quality & knowledge on the codebase was lacking.</li>
+          <li>We were only using Azure Dev Ops for git repos.</li>
+        </ul>
+        <h1 id="what-I-did" class="text-3xl">What I did</h1>
+        <hr class="border-black border-t-2 my-2" />
+        <ul class="list-disc m-2 p-2 text-base">
+          <li>I researched pull requests and code reviews.</li>
+          <li>Presented the idea to my team.</li>
+          <li>
+            Implement mandatory pull requests whenever a change to the codebase
+            & measured results.
+          </li>
+        </ul>
+        <h1 id="results" class="text-3xl">Results</h1>
+        <hr class="border-black border-t-2 my-2" />
+        <ul class="list-disc m-2 p-2 text-base">
+          <li>
+            <strong>3 code quality issues</strong> found per pull request.
+            <strong class="text-red-600">*</strong>
+          </li>
+          <li style="font-size: small">
+            <strong class="text-red-600 text-base">*</strong> - On average |
+            Code quality issue is an issue on readibility, or maintainability,
+            e.g. comments or variable names.
+          </li>
+        </ul>
+        <h1 id="next-steps" class="text-3xl">Next Steps</h1>
+        <hr class="border-black border-t-2 my-2" />
+        <ul class="list-disc m-2 p-2 text-base">
+          <li>Add linter to catch more minor issues before a code review.</li>
+          <li>Add pull request template to focus the code review.</li>
+          <li>
+            Automate deploy via Azure Dev Ops Pipelines when pull request is
+            accepted.
+          </li>
+        </ul>
       </div>
-      <hr class="border-black border-t-2 my-2" />
-      <div class="grid lg:grid-cols-3 md:grid-cols-1">
-        <div class="p-2 m-2"></div>
-        <div class="m-4 text-xl text-center">
-          <h1 class="text-3xl p-2 mb-2 border-black border-2">Contact</h1>
-          <form id="contactForm" class="border-black border-2 p-2 h-96">
-            <div class="text-left">
-              <label for="name">
-                <h2 class="ml-2">
-                  Name <strong class="text-red-600">*</strong>
-                </h2>
-                <input
-                  type="text"
-                  required
-                  name="name"
-                  id="name"
-                  class="border-black border-2 p-2 m-1 inputField focus:outline-none focus:border-blue-600 text-base"
-                />
-              </label>
-              <br />
-              <label for="email">
-                <h2 class="ml-2">
-                  Email <strong class="text-red-600">*</strong>
-                </h2>
-                <input
-                  type="text"
-                  required
-                  name="email"
-                  id="email"
-                  class="border-black border-2 p-2 m-1 inputField focus:outline-none focus:border-blue-600 text-base"
-                />
-              </label>
-              <br />
-              <label for="message">
-                <h2 class="ml-2">
-                  Message <strong class="text-red-600">*</strong>
-                </h2>
-                <textarea
-                  required
-                  name="message"
-                  id="message"
-                  class="border-black border-2 p-2 m-1 inputField h-24 focus:outline-none focus:border-blue-600 resize-none text-base"
-                ></textarea>
-              </label>
-            </div>
-            <button
-              type="submit"
-              id="submitContactButton"
-              class="bg-green-500 p-2 m-2 border-black border-2 hover:bg-lime-400 active:bg-yellow-300 active:text-black relative focus:outline-none focus:border-blue-600 focus:bg-lime-400"
-            >
-              <svg
-                id="loadingSpinner"
-                class="spinner absolute z-10 hidden"
-                width="24"
-                height="24"
-                viewBox="0 0 48 48"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle
-                  cx="24"
-                  cy="24"
-                  r="20"
-                  stroke="black"
-                  stroke-width="8"
-                />
-                <circle
-                  cx="24"
-                  cy="4"
-                  r="3"
-                  width="2"
-                  height="2"
-                  fill="white"
-                  stroke="none"
-                />
-              </svg>
-              <span id="submitButtonText">Submit</span>
-            </button>
-          </form>
-          <div
-            id="contactSuccessMessage"
-            class="border-black border-2 p-2 h-96 text-lg text-left hidden"
-          >
-            <div class="p-4 pt-2">
-              <h2
-                class="p-2 bg-green-300 border-green-800 border-l-4 flex items-center justify-center"
-              >
-                <span>You have sent your message!</span>
-                <img
-                  class="inline-block ml-2"
-                  src="/src/images/tick-icon.svg"
-                  alt="tick-icon"
-                  height="24px"
-                  width="24px"
-                />
+    </div>
+    <hr class="border-black border-t-2 my-2" />
+    <div class="m-4 grid lg:grid-cols-4 sm:grid-cols-1">
+      <div class="m-4 text-xl text-center lg:col-start-2 lg:col-span-2">
+        <h1 class="text-3xl p-2 mb-2 border-black border-2 rounded">Contact</h1>
+        <form
+          id="contactForm"
+          class="border-black border-2 p-2 h-96 rounded mr-auto m-l-auto"
+        >
+          <div class="text-center">
+            <label for="name">
+              <h2 class="ml-4 text-left">
+                Name <strong class="text-red-600">*</strong>
               </h2>
-              <br />
-              <div>
-                Please wait for <strong>3-4</strong> working days for a reply.
-              </div>
-              <br />
-              <div>If you have not received a reply, email:</div>
-              <ul class="list-disc">
-                <li class="text-base ml-6">
-                  <a
-                    class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 border-white border-opacity-0 focus:border-blue-600"
-                    href="mailto:alastair.mottram-epson@outlook.com"
-                    >alastair.mottram-epson@outlook.com</a
-                  >
-                </li>
-              </ul>
-              <br />
-              <div>I will get back to you as soon as possible.</div>
-            </div>
+              <input
+                type="text"
+                required
+                name="name"
+                id="name"
+                class="border-black border-2 p-2 m-1 inputField focus:outline-none focus:border-blue-600 text-base"
+              />
+            </label>
+            <br />
+            <label for="email">
+              <h2 class="ml-4 text-left">
+                Email <strong class="text-red-600">*</strong>
+              </h2>
+              <input
+                type="text"
+                required
+                name="email"
+                id="email"
+                class="border-black border-2 p-2 m-1 inputField focus:outline-none focus:border-blue-600 text-base"
+              />
+            </label>
+            <br />
+            <label for="message">
+              <h2 class="ml-4 text-left">
+                Message <strong class="text-red-600">*</strong>
+              </h2>
+              <textarea
+                required
+                name="message"
+                id="message"
+                class="border-black border-2 p-2 m-1 inputField h-24 focus:outline-none focus:border-blue-600 resize-none text-base"
+              ></textarea>
+            </label>
           </div>
-          <div
-            id="contactErrorMessage"
-            class="border-black border-2 p-2 h-96 text-lg text-left hidden"
+          <button
+            type="submit"
+            id="submitContactButton"
+            class="bg-green-500 p-2 m-2 border-black border-2 hover:bg-lime-400 active:bg-yellow-300 active:text-black relative focus:outline-none focus:border-blue-600 focus:bg-lime-400"
           >
-            <div class="p-4 pt-2">
-              <h2
-                class="p-2 bg-red-300 border-red-800 border-l-4 flex items-center justify-center"
-              >
-                <span>We cannot send your message.</span>
-                <img
-                  class="inline-block ml-2"
-                  src="/src/images/cross-icon.svg"
-                  alt="tick-icon"
-                  height="24px"
-                  width="24px"
-                />
-              </h2>
-              <br />
-              <div>Please reload the page to try again.</div>
-              <br />
-              <div>If you continue to see this error, email:</div>
-              <ul class="list-disc">
-                <li class="text-base ml-6">
-                  <a
-                    class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 border-white border-opacity-0 focus:border-blue-600"
-                    href="mailto:alastair.mottram-epson@outlook.com"
-                    >alastair.mottram-epson@outlook.com</a
-                  >
-                </li>
-              </ul>
-              <br />
-              <div>I will get back to you as soon as possible.</div>
+            <svg
+              id="loadingSpinner"
+              class="spinner absolute z-10 hidden"
+              width="24"
+              height="24"
+              viewBox="0 0 48 48"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="24" cy="24" r="20" stroke="black" stroke-width="8" />
+              <circle
+                cx="24"
+                cy="4"
+                r="3"
+                width="2"
+                height="2"
+                fill="white"
+                stroke="none"
+              />
+            </svg>
+            <span id="submitButtonText">Submit</span>
+          </button>
+        </form>
+        <div
+          id="contactSuccessMessage"
+          class="border-black border-2 p-2 h-96 text-lg text-left hidden"
+        >
+          <div class="p-4 pt-2">
+            <h2
+              class="p-2 bg-green-300 border-green-800 border-l-4 flex items-center justify-center"
+            >
+              <span>You have sent your message!</span>
+              <img
+                class="inline-block ml-2"
+                src="/src/images/tick-icon.svg"
+                alt="tick-icon"
+                height="24px"
+                width="24px"
+              />
+            </h2>
+            <br />
+            <div>
+              Please wait for <strong>3-4</strong> working days for a reply.
             </div>
+            <br />
+            <div>If you have not received a reply, email:</div>
+            <ul class="list-disc">
+              <li class="text-base ml-6">
+                <a
+                  class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 border-white border-opacity-0 focus:border-blue-600"
+                  href="mailto:alastair.mottram-epson@outlook.com"
+                  >alastair.mottram-epson@outlook.com</a
+                >
+              </li>
+            </ul>
+            <br />
+            <div>I will get back to you as soon as possible.</div>
           </div>
         </div>
-        <div class="p-2 m-2"></div>
+        <div
+          id="contactErrorMessage"
+          class="border-black border-2 p-2 h-96 text-lg text-left hidden"
+        >
+          <div class="p-4 pt-2">
+            <h2
+              class="p-2 bg-red-300 border-red-800 border-l-4 flex items-center justify-center"
+            >
+              <span>We cannot send your message.</span>
+              <img
+                class="inline-block ml-2"
+                src="/src/images/cross-icon.svg"
+                alt="tick-icon"
+                height="24px"
+                width="24px"
+              />
+            </h2>
+            <br />
+            <div>Please reload the page to try again.</div>
+            <br />
+            <div>If you continue to see this error, email:</div>
+            <ul class="list-disc">
+              <li class="text-base ml-6">
+                <a
+                  class="text-blue-700 hover:text-blue-500 active:text-purple-600 focus:outline-none border-2 border-white border-opacity-0 focus:border-blue-600"
+                  href="mailto:alastair.mottram-epson@outlook.com"
+                  >alastair.mottram-epson@outlook.com</a
+                >
+              </li>
+            </ul>
+            <br />
+            <div>I will get back to you as soon as possible.</div>
+          </div>
+        </div>
       </div>
     </div>
     <footer
@@ -348,7 +305,6 @@
         </ul>
       </section>
     </footer>
-    <script type="module" defer src="../../src/stickyNav.ts"></script>
     <script type="module" defer src="/src/main.ts"></script>
     <script id="googleRecaptchaScript"></script>
   </body>
