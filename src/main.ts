@@ -42,21 +42,20 @@ contactForm?.addEventListener('submit', ($event) => {
               message: messageTextarea?.value, 
               token
             }),
-        });
+          });
 
-        const { isEmailSent } = await contactFormApiResponse.json();
-        contactForm.classList.add('hidden');
+          const { isEmailSent } = await contactFormApiResponse.json();
+          contactForm.classList.add('hidden');
 
-        if (isEmailSent) {
-          contactSuccessMessage?.classList.remove('hidden');
-        } else {
-          contactErrorMessage?.classList.remove('hidden');
-        }
+          if (isEmailSent) {
+            contactSuccessMessage?.classList.remove('hidden');
+          } else {
+            contactErrorMessage?.classList.remove('hidden');
+          }
         } catch($error) {
           contactForm.classList.add('hidden');
           contactErrorMessage?.classList.remove('hidden');
-          throw Error($error);
+          console.error($error);
         }
-
     });
 });
