@@ -1,4 +1,4 @@
-import cv from './assets/AlastairM-E--2022.03.27--CV.pdf';
+import cv from './assets/AlastairM-E--2022.04.16--CV.pdf';
 
 const container = document.getElementById('container');
 const embedPDF = document.createElement('embed');
