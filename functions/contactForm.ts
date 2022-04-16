@@ -24,7 +24,7 @@ const handler: Handler = async ($event, context) => {
   const msg = {
     to: "alastair.me.opensource@gmail.com",
     from: "alastair.mottram-epson@outlook.com",
-    subject: "alastairmottram-epson.co.uk query",
+    subject: "alastairmottram-epson.com query",
     text: `
     Name: ${name},
     Email: ${email},
